@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mods - Minecraft Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <article class="header-pt1">
+                <a href="https://www.minecraft.net/" target="_blank" id="logo"><img src="imgs/minecrat-logo.png" alt="logo minecraft"></a>
+                <a href="https://lucasdacunha73-dot.github.io/Minecraft-Wiki-Fandom/" target="_blank"><img src="imgs/minecraft-wiki-titulo.png" alt="titulo minecraft wiki"></a>
+            </article>
+
+            <article class="header-pt2">
+                <nav>
+                    <div onclick="link('index')"><i class="fa-solid fa-house-chimney"></i>Início</div>
+                    <div onclick="menu('mostrar'), categoria('mods')"><i class="fa-solid fa-globe"></i>Explorar</div>
+                    <div onclick="link('mobs')"><i class="fa-solid fa-book-open"></i>Mobs</div>
+                    <div onclick="link('sobre')"><i class="fa-solid fa-star"></i>Sobre</div>
+                </nav>
+            </article>
+
+            <button id="botao-menu" onclick="menuhamburguer('mostrar')"><i class="fa-solid fa-bars"></i></button>
+
+            <article id="menu-mobile">
+                <nav>
+                    <a href="#" onclick="menuhamburguer('esconder')"><i class="fa-solid fa-xmark"></i></a>
+                    <div onclick="link('index')">Início</div>
+                    <div onclick="link('mods')">Mods</div>
+                    <div onclick="link('biomas')">Biomas</div>
+                    <div onclick="link('mobs')">Mobs</div>
+                    <div onclick="link('curiosidades')">Curiosidades</div>
+                    <div onclick="link('sobre')">Sobre</div>
+                </nav>
+            </article>
+
+            <article class="header-pt3">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+            </article>
+        </section>
+
+        <section class="header2 header2-mods">
+            <img id="header2-img1-mods" src="imgs/mods/picareta-encantada.png" alt="picareta encantada">
+            <article>
+                <img src="imgs/mods/titulo-header.png" alt="titulo do header">
+                <p>Descubra os melhores mods do Minecraft.</p>
+            </article>
+        </section>
+    </header>
+
+    <main class="mods">
+        <section>
+            <article class="mods-pt1">
+                <h1>Catalogo de Mods</h1>
+                <p>Explore mods incríveis que adicionam novas mecânicas, itens e muito mais ao seu Minecraft!</p>
+            </article>
+
+            <section class="cards-mods">
+                <article>
+                    <img src="imgs/mods/create.png" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>Create</h2>
+                        <p>Adicione máquinas e engenharias incríveis ao seu mundo com o mod Create!</p>
+                        <div class="genero-mod">
+                            <p>Tecnologia</p>
+                            <p>Automação</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(1)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/orespawn.png" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>Orespawn</h2>
+                        <p>Explore um mundo cheio de novas criaturas, armaduras e bosses íncriveis com o Orespawn</p>
+                        <div class="genero-mod">
+                            <p>Criaturas</p>
+                            <p>Aventura</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(2)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/projecte.png" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>Project E</h2>
+                        <p>Descubra ferramentas, objetos e dispositivos alquímicos poderosos, e use essa EMC para criar novos itens.</p>
+                        <div class="genero-mod">
+                            <p>Magia</p>
+                            <p>Energia</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(3)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/Mekanism.png" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>Mekanism</h2>
+                        <p>Conheça um conjunto de máquinas de níveis baixo, médio e alto para modernizar sua casa arcaica e seu processamento de recursos ineficiente.</p>
+                        <div class="genero-mod">
+                            <p>Tecnologia</p>
+                            <p>Armazenamento</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(4)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/JourneyMap.png" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>JourneyMap</h2>
+                        <p>Mapeamento em tempo real no jogo ou em um navegador da web enquanto você explora.</p>
+                        <div class="genero-mod">
+                            <p>Mapa</p>
+                            <p>Informações</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(5)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/Just Enough Items.jpeg" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>Just Enough Items</h2>
+                        <p>JEI é um mod para Minecraft que permite visualizar itens e receitas.</p>
+                        <div class="genero-mod">
+                            <p>Mapa</p>
+                            <p>Informações</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(6)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/Apple Skin.png" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>AppleSkin</h2>
+                        <p>Este é um mod que funciona principalmente no lado do cliente, mas precisa estar no servidor para exibir valores precisos de saturação/exaustão no cliente.</p>
+                        <div class="genero-mod">
+                            <p>Comida</p>
+                            <p>Informações</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(7)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/Waystones.png" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>Waystones</h2>
+                        <p>Adiciona blocos de teletransporte aos quais o jogador pode retornar após serem ativados, seja através de um Pergaminho de Teletransporte.</p>
+                        <div class="genero-mod">
+                            <p>Transporte</p>
+                            <p>Mágico</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(8)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/Sophisticated Backpacks.jpeg" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>Sophisticated Backpacks</h2>
+                        <p>Mais um mod de mochila, desta vez com uma mochila que você pode colocar no mundo.</p>
+                        <div class="genero-mod">
+                            <p>Armazenamento</p>
+                            <p>Armaduras</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(9)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/mods/Mahou Tsukai.jpeg" alt="logo mod">
+                    <div class="info-mod">
+                        <h2>Mahou Tsukai</h2>
+                        <p>Um mod de magia focado em efeitos especiais e na singularidade dos feitiços.</p>
+                        <div class="genero-mod">
+                            <p>Mágico</p>
+                            <p>RPG</p>
+                        </div>
+                        <div class="botao-mod" onclick="mod(10)"><i class="fa-solid fa-arrow-right"></i>Ver Mais</div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="menu" class="menu" >
+                <div class="bloco-categorias">
+                    <section class="menu-pt1">
+                        <article onclick="categoria('mods')">
+                            <img src="imgs/index/bloco-de-grama.png" alt="bloco de grama">
+                            <div>
+                                <h2>Mods</h2>
+                                <p>Melhore sua experiência</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('biomas')">
+                            <img src="imgs/index/muda de carvalho.png" alt="muda de carvalho">
+                            <div>
+                                <h2>Biomas</h2>
+                                <p>Descubra novos biomas</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('mobs')">
+                            <img src="imgs/index/Crafting-table.png" alt="Crafting Table">
+                            <div>
+                                <h2>Mobs</h2>
+                                <p>Conheça os mobs</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('curiosidades')">
+                            <img src="imgs/index/livro-minecraft.png" alt="livro">
+                            <div>
+                                <h2>Curiosidades</h2>
+                                <p>Fatos incríveis sobre Minecraft</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <button onclick="menu('fechar')"> Fechar </button>
+                    </section>
+
+                    <section class="menu-pt2">
+                        <img id="img-categoria" alt="logo categoria">
+                        <h2 id="nome-categoria"></h2>
+                        <p id="descricao-categoria"></p>
+                        <button onclick="pagina()">Explorar <i class="fa-solid fa-arrow-right"></i></button>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            <img src="imgs/minecrat-logo.png" alt="logo minecraft">
+            <p>Minecraft Wiki | Explore. Aprenda. Jogue.</p>
+        </article>
+            
+        <article id="footer-pt2">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-github"></i>
+        </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

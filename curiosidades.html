@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades - Minecraft Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <article class="header-pt1">
+                <a href="https://www.minecraft.net/" target="_blank" id="logo"><img src="imgs/minecrat-logo.png" alt="logo minecraft"></a>
+                <a href="https://lucasdacunha73-dot.github.io/Minecraft-Wiki-Fandom/" target="_blank"><img src="imgs/minecraft-wiki-titulo.png" alt="titulo minecraft wiki"></a>
+            </article>
+
+            <article class="header-pt2">
+                <nav>
+                    <div onclick="link('index')"><i class="fa-solid fa-house-chimney"></i>Início</div>
+                    <div onclick="menu('mostrar'), categoria('mods')"><i class="fa-solid fa-globe"></i>Explorar</div>
+                    <div onclick="link('mobs')"><i class="fa-solid fa-book-open"></i>Mobs</div>
+                    <div onclick="link('sobre')"><i class="fa-solid fa-star"></i>Sobre</div>
+                </nav>
+            </article>
+
+            <button id="botao-menu" onclick="menuhamburguer('mostrar')"><i class="fa-solid fa-bars"></i></button>
+
+            <article id="menu-mobile">
+                <nav>
+                    <a href="#" onclick="menuhamburguer('esconder')"><i class="fa-solid fa-xmark"></i></a>
+                    <div onclick="link('index')">Início</div>
+                    <div onclick="link('mods')">Mods</div>
+                    <div onclick="link('biomas')">Biomas</div>
+                    <div onclick="link('mobs')">Mobs</div>
+                    <div onclick="link('curiosidades')">Curiosidades</div>
+                    <div onclick="link('sobre')">Sobre</div>
+                </nav>
+            </article>
+
+            <article class="header-pt3">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+            </article>
+        </section>
+
+        <section class="header2 header2-sobre header2-curiosidades">
+            <img id="header2-img1-curiosidades" src="imgs/curiosidades/estrela.png" alt="Ponto de Exclamação">
+            <article>
+                <img src="imgs/curiosidades/titulo-header.png" alt="titulo do header">
+                <p>Fatos interessantes, segredos e detelhes incríveis sobre o Minecraft!</p>
+            </article>
+        </section>
+    </header>
+
+    <main class="curiosidades">
+            <article class="curiosidades-pt1">
+                <h1>Artigos em Destaque</h1>
+                <p>Descubra curiosidades que tornam o Minecraft ainda mais especial!</p>
+            </article>
+
+            <section class="curiosidades-pt2">
+                <article>
+                    <img src="imgs/curiosidades/creeper.avif" alt="imagem da curiosidade">
+                    <div>
+                        <h2>O Creeper</h2>
+                        <p>O Creeper surgiu por acidente. Durante o desenvolvimento do jogo, Notch errou as proporções ao criar um porco. Em vez de descartar o modelo, ele o transformou no Creeper.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/curiosidades/portal.jpe" alt="imagem da curiosidade">
+                    <div>
+                        <h2>O Nether</h2>
+                        <p>O Nether é um dos lugares mais perigosos e misteriosos do jogo.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/curiosidades/axalote.jpeg" alt="imagem da curiosidade">
+                    <div>
+                        <h2>Axalotes</h2>
+                        <p>Os Zxalotes são mods raros e podem te ajudar na água!</p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/curiosidades/disco.jpg" alt="imagem da curiosidade">
+                    <div>
+                        <h2>Discos Musicais</h2>
+                        <p>Existem vários discos musicais excondidos pelo mundo.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="menu" class="menu" >
+                <div class="bloco-categorias">
+                    <section class="menu-pt1">
+                        <article onclick="categoria('mods')">
+                            <img src="imgs/index/bloco-de-grama.png" alt="bloco de grama">
+                            <div>
+                                <h2>Mods</h2>
+                                <p>Melhore sua experiência</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('biomas')">
+                            <img src="imgs/index/muda de carvalho.png" alt="muda de carvalho">
+                            <div>
+                                <h2>Biomas</h2>
+                                <p>Descubra novos biomas</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('mobs')">
+                            <img src="imgs/index/Crafting-table.png" alt="Crafting Table">
+                            <div>
+                                <h2>Mobs</h2>
+                                <p>Conheça os mobs</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('curiosidades')">
+                            <img src="imgs/index/livro-minecraft.png" alt="livro">
+                            <div>
+                                <h2>Curiosidades</h2>
+                                <p>Fatos incríveis sobre Minecraft</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <button onclick="menu('fechar')"> Fechar </button>
+                    </section>
+
+                    <section class="menu-pt2">
+                        <img id="img-categoria" alt="logo categoria">
+                        <h2 id="nome-categoria"></h2>
+                        <p id="descricao-categoria"></p>
+                        <button onclick="pagina()">Explorar <i class="fa-solid fa-arrow-right"></i></button>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            <img src="imgs/minecrat-logo.png" alt="logo minecraft">
+            <p>Minecraft Wiki | Explore. Aprenda. Jogue.</p>
+        </article>
+            
+        <article id="footer-pt2">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-github"></i>
+        </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

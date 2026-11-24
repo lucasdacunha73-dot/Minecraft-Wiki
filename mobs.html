@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobs - Minecraft Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <article class="header-pt1">
+                <a href="https://www.minecraft.net/" target="_blank" id="logo"><img src="imgs/minecrat-logo.png" alt="logo minecraft"></a>
+                <a href="https://lucasdacunha73-dot.github.io/Minecraft-Wiki-Fandom/" target="_blank"><img src="imgs/minecraft-wiki-titulo.png" alt="titulo minecraft wiki"></a>
+            </article>
+
+            <article class="header-pt2">
+                <nav>
+                    <div onclick="link('index')"><i class="fa-solid fa-house-chimney"></i>Início</div>
+                    <div onclick="menu('mostrar'), categoria('mods')"><i class="fa-solid fa-globe"></i>Explorar</div>
+                    <div onclick="link('mobs')"><i class="fa-solid fa-book-open"></i>Mobs</div>
+                    <div onclick="link('sobre')"><i class="fa-solid fa-star"></i>Sobre</div>
+                </nav>
+            </article>
+
+            <button id="botao-menu" onclick="menuhamburguer('mostrar')"><i class="fa-solid fa-bars"></i></button>
+
+            <article id="menu-mobile">
+                <nav>
+                    <a href="#" onclick="menuhamburguer('esconder')"><i class="fa-solid fa-xmark"></i></a>
+                    <div onclick="link('index')">Início</div>
+                    <div onclick="link('mods')">Mods</div>
+                    <div onclick="link('biomas')">Biomas</div>
+                    <div onclick="link('mobs')">Mobs</div>
+                    <div onclick="link('curiosidades')">Curiosidades</div>
+                    <div onclick="link('sobre')">Sobre</div>
+                </nav>
+            </article>
+
+            <article class="header-pt3">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+            </article>
+        </section>
+
+        <section class="header2 header2-sobre header2-mobs">
+            <article>
+                <img src="imgs/mobs/titulo-header.png" alt="titulo do header">
+                <p>Conheça algumas informações sobre os mobs do Minecraft!</p>
+            </article>
+        </section>
+    </header>
+
+    <main class="mobs">
+            <article class="mobs-pt1">
+                <h1>Categorias</h1>
+            </article>
+
+            <section class="mobs-pt2">
+                <article id="passivos">
+                    <div>
+                        <h2>Passivos</h2>
+                        <p>Animais e Criaturas passificas</p>
+                    </div>
+                </article>
+
+                <article id="neutros">
+                    <div>
+                        <h2>Neutros</h2>
+                        <p>Podem ser amigáveis ou hostis</p>
+                    </div>
+                </article>
+
+                <article id="hostis">
+                    <div>
+                        <h2>Hostis</h2>
+                        <p>Criaturas Perigosas</p>
+                    </div>
+                </article>
+
+                <article id="boses">
+                    <div>
+                        <h2>Boses</h2>
+                        <p>Os maiores desafios do jogo</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="mobs-pt3">
+                <article class="mobs-pt3-1">
+                    <h2>Destaque: Creeper</h2>
+                    <div>
+                        <img src="imgs/mobs/creeper.jpg" alt="Creeper">
+                        <p>O Creeper é uma das criaturas mais icônicas de Minecraft. Conhecido por sua explosão, ele pode ser um grande perigo, mas também faz parte da diversão do jogo.
+                            <br><br>
+                            Vida: 20 (10 corações)
+                            <br><br>
+                            Ataque: Explosão
+                            <br><br>
+                            Surge em: Qualquer lugar (exceto água)
+                        </p>
+                    </div>
+                </article>
+
+                <article class="mobs-pt3-2">
+                    <h2>Curiosidades</h2>
+                    <div>
+                        <p>O Creeper é uma das criaturas mais icônicas de Minecraft. Conhecido por sua explosão, ele pode ser um grande perigo, mas também faz parte da diversão do jogo.</p>
+                    </div>
+
+                    <div>
+                        <p>Os Endermen podem carregar blocos e se teleportar!</p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="menu" class="menu" >
+                <div class="bloco-categorias">
+                    <section class="menu-pt1">
+                        <article onclick="categoria('mods')">
+                            <img src="imgs/index/bloco-de-grama.png" alt="bloco de grama">
+                            <div>
+                                <h2>Mods</h2>
+                                <p>Melhore sua experiência</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('biomas')">
+                            <img src="imgs/index/muda de carvalho.png" alt="muda de carvalho">
+                            <div>
+                                <h2>Biomas</h2>
+                                <p>Descubra novos biomas</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('mobs')">
+                            <img src="imgs/index/Crafting-table.png" alt="Crafting Table">
+                            <div>
+                                <h2>Mobs</h2>
+                                <p>Conheça os mobs</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('curiosidades')">
+                            <img src="imgs/index/livro-minecraft.png" alt="livro">
+                            <div>
+                                <h2>Curiosidades</h2>
+                                <p>Fatos incríveis sobre Minecraft</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <button onclick="menu('fechar')"> Fechar </button>
+                    </section>
+
+                    <section class="menu-pt2">
+                        <img id="img-categoria" alt="logo categoria">
+                        <h2 id="nome-categoria"></h2>
+                        <p id="descricao-categoria"></p>
+                        <button onclick="pagina()">Explorar <i class="fa-solid fa-arrow-right"></i></button>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            <img src="imgs/minecrat-logo.png" alt="logo minecraft">
+            <p>Minecraft Wiki | Explore. Aprenda. Jogue.</p>
+        </article>
+            
+        <article id="footer-pt2">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-github"></i>
+        </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

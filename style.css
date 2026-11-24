@@ -1,0 +1,1048 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+/* header */
+.header{
+    display: flex;
+    background-color: #081025;
+    color: #bdbfcc;
+    height: 9vh;
+    padding: 7px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-pt1{
+    position: relative;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-pt1 img{
+    height: 7vh;
+    margin-left: 20px;
+    cursor: crosshair;
+}
+
+.header-pt2{
+    position: relative;
+    margin: auto;
+}
+
+.header-pt2 nav,
+.header-pt2 div{
+    display: flex;
+}
+
+.header-pt2 div{
+    gap: 5px;
+    cursor: pointer;
+    padding: 20px;
+    justify-content: space-around;
+    border-bottom: solid 4px #081025;
+    transition: border-color 0.3s;
+}   
+
+.header-pt2 div:hover{
+    border-color: #703af4;
+}
+
+.header-pt2 nav{
+    gap: 20px;
+}
+
+.header-pt2 a{
+    color: #bdbfcc;
+    text-decoration: none;
+}
+
+.header-pt3{
+    position: relative;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-pt3 div{
+    background-color: #222537;
+    padding: 7px 20px;
+    border-radius: 20px;
+    cursor: text;
+}
+
+.header-pt3 input{
+    background: none;
+    border: none;
+    outline: none;
+    color: #bdbfcc;
+}
+
+.header-pt3 i{
+    margin-right: 5px;
+}
+
+.header2{
+    background-image: url(imgs/background-header.jpeg);
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    padding: 5%;
+}
+
+.header2 article{
+    display: flex;
+    gap: 20px;
+}
+
+.header2 img{
+    width: 35%;
+}
+
+.header2 p{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.header2-botao1{
+    background-color: #703af4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header2-botao1:hover{
+    background-color: #6137cc;
+}
+
+.header2-botao2 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header2-botao2 i{
+    color: inherit;
+}
+
+.header2-botao2{
+    border: solid white 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header2-botao2:hover{
+    background-color: white;
+    border-color: #6137cc;
+    color: #6137cc;
+}
+
+/* index */
+.index{
+    background-color: #0a0f1c;
+    padding: 20px 40px;
+    flex: 1;
+}
+
+.index img{
+    width: 7vw;
+}
+
+.index p{
+    color: #bdbfcc;
+}
+
+.cards-index{
+    display: flex;
+    gap: 20px;
+}
+
+.cards-index article{
+    display: flex;
+    background-color: #161d36;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: all 0.4s;
+    box-shadow: 4px 4px 4px -2px rgba(182, 152, 247, 0.651);
+}
+
+.cards-index article:hover{
+    transform: scale(1.1);
+}
+
+.cards-index a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cards-index i{
+    color: inherit;
+    margin-left: 8px;
+}
+
+.cards-index article div{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    color: #703af4;
+    transition: all 0.3s;
+}
+
+.cards-index article div div{
+    cursor: pointer;
+    width: 55%;
+}
+
+.cards-index article div:hover{
+    color: white;
+}
+
+.cards-index p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.index-pt1,
+.mods-pt1,
+.biomas-pt1{
+    border-left: solid 5px #703af4;
+    padding-left: 15px;
+}
+
+/* mods */
+.header2-mods,
+.header2-biomas,
+.header2-sobre,
+.header2-curiosidades{
+    display: flex;
+    background-image: url(imgs/mods/background-header.jpeg);
+    background-position: right;
+    padding: 2.5vw;
+    height: 12vh;
+}
+
+.header2-mods article{
+    display: block;
+    height: 8vw;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header2-mods article img{
+    width: 11vw;
+}
+
+#header2-img1-mods{
+    width: 6.5vw;
+    height: 6.5vw;
+}
+
+.mods,
+.biomas,
+.sobre,
+.curiosidades,
+.mobs{
+    background-color: #101021;
+    padding: 20px 40px;
+    flex: 1;
+}
+
+.cards-mods{
+    margin: 5vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cards-mods article{
+    width: 27vw;
+    height: 25vh;
+    border: solid 1px #bdbfcc;
+    background-color: #1d1d36;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.cards-mods article:hover{
+    transform: translateY(-5px);
+}
+
+.cards-mods article img{
+    margin-right: 20px;
+    width: 10vw;
+    height: 10.5vw;
+    border-radius: 10px;
+    border: solid 1px #6137cc;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.genero-mod{
+    display: flex;
+    gap: 20px;
+}
+
+.genero-mod p{
+    background-color: #703af4;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.botao-mod{
+    background-color: #703af4;
+    width: 7vw;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.botao-mod:hover{
+    background-color: #6137cc;
+}
+
+.botao-mod i{
+    margin-right: 10px;
+}
+
+.botao-mod a{
+    text-decoration: none;
+}
+
+.info-mod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* menu */
+.menu{
+    z-index: 11;
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1d1d36b0;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-categorias{
+    display: flex;
+    border: solid 2px #703af4;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #0e1222;
+    width: 40%;
+    height: 60%;
+}
+
+.menu-pt1 article{
+    margin-bottom: 10px;
+    width: 60%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.menu-pt1 article:hover{
+    background-color: #6f3af4c7;
+}
+
+.menu button{
+    background-color: #6137cc;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+
+.menu button:hover{
+    background-color: #382174;
+}
+
+.menu-pt2{
+    border-left: #382174 solid 1px;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-pt2 h2,
+.menu-pt2 p{
+    margin-bottom: 15%;
+}
+
+.menu img{
+    width: 5vw;
+}
+
+.menu article{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+/* biomas */
+.header2-biomas{
+    background-image: url(imgs/biomas/background-biomas.jpe);
+}
+
+.header2-biomas article img{
+    width: 15vw;
+    height: 7vh;
+    margin: 0;
+}
+
+#header2-img1-biomas{
+    width: 6.5vw;
+    height: 6.5vw;
+}
+
+.header2-biomas article{
+    flex-direction: column;
+}
+
+.biomas-pt2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 30px;
+    gap: 40px;
+}
+
+.biomas-pt2 article img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.biomas-pt2 article{
+    width: 20vw;
+    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: #7c55e9 solid 1px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.biomas-pt2 article:hover{
+    transform: translateY(-5px) translateX(-5px);
+    box-shadow: 4px 4px 4px -2px rgba(182, 152, 247, 0.651);
+}
+
+.biomas-pt2 article div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 15px;
+    height: 50%;
+    padding: 10px;
+}
+
+.biomas-pt2 article button{
+    background-color: #2b165fdc;
+    border: #7c55e9 solid 1px;
+    padding: 10px 20px;
+    width: 40%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: all 0.3s;
+}
+
+.biomas-pt2 article button:hover{
+    background-color: #6137cc;
+}
+
+.biomas-pt2 article h3{
+    margin-left: 10px;
+}
+
+/* sobre */
+.header2-sobre{
+    display: flex;
+}
+
+.header2-sobre article{
+    display: block;
+}
+
+.header2-sobre article img{
+    width: 60%;
+}
+
+#header2-img1-sobre{
+    width: 3%;
+    margin-right: 20PX;
+}
+
+.sobre-pt1-2{
+    width: 36vw;
+    border: solid #6137cc 1px;
+    border-radius: 15px;
+    padding: 30px;
+    height: 28vh;
+    transition: all 0.3s;
+}
+
+.sobre-pt1-2 ul{
+    list-style: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+.sobre-pt1-2 li{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.sobre-pt1-2 input{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sobre-pt1{
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.sobre-pt1-1 img{
+    width: 10vw;
+    height: 19.5vh;
+    margin-right: 30px;
+}
+
+.sobre-pt1-1 h2,
+.sobre-pt1-2 h2,
+.sobre-pt2 h2{
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: solid 7px #703af4;
+}
+
+.sobre-pt1-1{
+    width: 50vw;
+    height: 28vh;
+    border: solid #6137cc 1px;
+    border-radius: 15px;
+    padding: 30px;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.sobre-pt1-1:hover,
+.sobre-pt1-2:hover{
+    transform: translateY(-5px);
+}
+
+.sobre-pt1-1 div{
+    display: flex;
+    width: 100%;
+}
+
+.sobre-pt1-1 p{
+    font-size: 18px;
+}
+
+.sobre-pt2{
+    border: solid #6137cc 1px;
+    border-radius: 15px;
+    padding: 30px;
+    width: 86vw;
+    margin: 0 auto;
+}
+
+.sobre-pt2 h2{
+    margin-bottom: 5px;
+}
+
+.sobre-pt2 p{
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.sobre-pt2-2{
+    display: flex;
+    gap: 20px;
+}
+
+.sobre-pt2-2 article{
+    border: solid #6137cc 1px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 15vw;
+    height: 14vh;
+    transition: all 0.3s;
+}
+
+.sobre-pt2-2 article:hover{
+    background-color: #1d085280;
+    transform: translateY(-5px);
+}
+
+.sobre-pt2-2 img{
+    width: 30%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* curiosidades */
+#header2-img1-curiosidades{
+    width: 15vh;
+    height: 15vh;
+}
+
+.header2-curiosidades{
+    background-image: url(imgs/curiosidades/background-curiosidades.jpeg.jpe);
+    background-position: top;
+}
+
+.curiosidades-pt1,
+.mobs-pt1{
+    padding-left: 15px;
+    border-left: 9px solid #6137cc;
+}
+
+.curiosidades-pt1 p{
+    margin-top: 5px;
+}
+
+.curiosidades-pt2 article img{
+    width: 22vw;
+    border-radius: 15px 15px 0 0;
+    transition: all 0.5s;
+}
+
+.curiosidades-pt2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.curiosidades-pt2 article{
+    width: 22vw;
+    border: solid 1px #6137cc;
+    border-radius: 15px;
+    height: 40vh;
+    background-color: #1a1931;
+    transition: all 0.5s;
+}
+
+.curiosidades-pt2 article:hover{
+    div{
+        display: none
+    }
+
+    img{
+        scale: 1.05;
+        border-radius: 10px;
+    }
+
+    background: none;
+    border: none;
+}
+
+.curiosidades-pt2 div{
+    padding: 15px;
+}
+
+.curiosidades-pt2 h2{
+    margin-bottom: 10px;
+}
+
+/* mobs */
+.header2-mobs{
+    background-image: url(imgs/mobs/bacground-header.jfif);
+    background-position: left;
+}
+
+#passivos{
+    background-image: url(imgs/mobs/passivos.jpg);
+}
+
+#neutros{
+    background-image: url(imgs/mobs/neutros.png);
+}
+
+#hostis{
+    background-image: url(imgs/mobs/hostis.avif);
+}
+
+#boses{
+    background-image: url(imgs/mobs/boses.jpg);
+}
+
+.mobs-pt2 article{
+    width: 22vw;
+    height: 25vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    background-color: #081025;
+    border: solid 1px #6137cc;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.mobs-pt2 article:hover{
+    scale: 1.05;
+}
+
+.mobs-pt2 div{
+    background-color: #161d36dc;
+    width: 100%;
+    height: 35%;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.mobs-pt2{
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.mobs-pt3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.mobs-pt3-1 div{
+    display: flex;
+}
+
+.mobs-pt3-1{
+    width: 60%;
+    border: solid 1px #6137cc;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.mobs-pt3-1:hover,
+.mobs-pt3-2:hover{
+    background-color: #1d085280;
+}
+
+.mobs-pt3-1 img{
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.mobs-pt3-2{
+    width: 30%;
+    border: solid 1px #6137cc;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.3s;
+}
+
+/* footer */
+footer{
+    margin-top: auto;
+    background-color: #0e1222;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: space-between;
+}
+
+footer i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer img{
+    height: 4vh;
+}
+
+footer article{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#menu-mobile,
+#botao-menu{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .header-pt2,
+    .header-pt3{
+        display: none;
+    }
+
+    #botao-menu{
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+        margin-left: auto;
+        background: none;
+        border: none;
+        font-size: 20px;
+    }
+
+    .header-pt1 img{
+        width: 38vw;
+        height: 7vh;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #menu-mobile{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: #161d36;
+        width: 50vw;
+        top: 0;
+        height: 100vh;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #menu-mobile a{
+        display: flex;
+        left: 0;
+        text-decoration: none;
+    }
+
+    #menu-mobile nav div{
+        margin-top: 15px;
+    }
+
+    .cards-index{
+        display: block;
+    }
+
+    .cards-index article{
+        width: 70vw;
+    }
+
+    .cards-index img{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .header2 img{
+        display: none;
+    }
+
+    .header2-botao1{
+        display: none;
+    }
+
+    #footer-pt2{
+        display: none;
+    }
+
+    .biomas-pt2{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .biomas-pt2 article{
+        width: 70vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .biomas-pt2 article button{
+        width: 50%;
+    } 
+
+    .cards-mods article{
+        width: 90vw;
+        display: block;
+        height: auto;
+    }
+
+    .cards-mods article img{
+        width: 40vw;
+        height: 40vw;
+        margin-bottom: 20px;
+    }
+
+    .genero-mod{
+        margin: 10px 0;
+
+        p{
+            font-size: inherit;
+        }
+    }
+
+    body{
+        font-size: 20px;
+    }
+
+    .botao-mod{
+        width: 50%;
+    }
+
+    .mobs-pt2{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 5px;
+        width: 90vw;
+    }
+
+    .mobs-pt3{
+        display: block;
+    }
+
+    .mobs-pt3-2{
+        width: 75vw;
+        margin-top: 20px;
+
+        p{
+            margin-top: 20px;
+        }
+    }
+
+    .mobs-pt3-1 div{
+        display: block;
+
+        img{
+            margin: 10px auto;
+        }
+    }
+
+    .mobs-pt3-1{
+        display: block;
+        width: 80vw;
+        margin: 0;
+    }
+
+    .mobs-pt2 article{
+        width: 40vw;
+        height: 25vh;
+
+        div{
+            height: 13vh;
+        }
+    }
+
+    .mobs,
+    .biomas,
+    .mods,
+    .sobre{
+        padding: 20px;
+    }
+
+    .curiosidades-pt2{
+        display: block;
+    }
+
+    .curiosidades-pt2 article{
+        width: 80vw;
+        margin-bottom: 20px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .sobre-pt1{
+        display: block;
+    }
+
+    .sobre-pt1-1{
+        width: 75vw;
+        height: auto;
+
+        img{
+            width: 30%;
+            height: 30%;
+        }
+    }
+
+    .sobre-pt1-2{
+        width: 75vw;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .sobre-pt2{
+        width: 80vw;
+        padding: 15px;
+    }
+
+    .sobre-pt2-2{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 13px;
+        justify-content: center;
+
+        article{
+            width: 40%;
+            height: 40%;
+        }
+    }
+
+    footer{
+        text-align: center;
+    }
+}

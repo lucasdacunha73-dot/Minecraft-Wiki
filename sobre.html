@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Minecraft Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <article class="header-pt1">
+                <a href="https://www.minecraft.net/" target="_blank" id="logo"><img src="imgs/minecrat-logo.png" alt="logo minecraft"></a>
+                <a href="https://lucasdacunha73-dot.github.io/Minecraft-Wiki-Fandom/" target="_blank"><img src="imgs/minecraft-wiki-titulo.png" alt="titulo minecraft wiki"></a>
+            </article>
+
+            <article class="header-pt2">
+                <nav>
+                    <div onclick="link('index')"><i class="fa-solid fa-house-chimney"></i>Início</div>
+                    <div onclick="menu('mostrar'), categoria('mods')"><i class="fa-solid fa-globe"></i>Explorar</div>
+                    <div onclick="link('mobs')"><i class="fa-solid fa-book-open"></i>Mobs</div>
+                    <div onclick="link('sobre')"><i class="fa-solid fa-star"></i>Sobre</div>
+                </nav>
+            </article>
+
+            <button id="botao-menu" onclick="menuhamburguer('mostrar')"><i class="fa-solid fa-bars"></i></button>
+
+            <article id="menu-mobile">
+                <nav>
+                    <a href="#" onclick="menuhamburguer('esconder')"><i class="fa-solid fa-xmark"></i></a>
+                    <div onclick="link('index')">Início</div>
+                    <div onclick="link('mods')">Mods</div>
+                    <div onclick="link('biomas')">Biomas</div>
+                    <div onclick="link('mobs')">Mobs</div>
+                    <div onclick="link('curiosidades')">Curiosidades</div>
+                    <div onclick="link('sobre')">Sobre</div>
+                </nav>
+            </article>
+
+            <article class="header-pt3">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+            </article>
+        </section>
+
+        <section class="header2 header2-sobre">
+            <img id="header2-img1-sobre" src="imgs/sobre/!.png" alt="Ponto de Exclamação">
+            <article>
+                <img src="imgs/sobre/titulo-header.png" alt="titulo do header">
+                <p>Conheça mais sobre a nossa wiki!</p>
+            </article>
+        </section>
+    </header>
+
+    <main class="sobre">
+        <section>
+            <section class="sobre-pt1">
+                <article class="sobre-pt1-1">
+                    <h2>Sobre a Minecraft Wiki</h2>
+                    <div>
+                        <img src="imgs/index/bloco-de-grama.png" alt="bloco de grama">
+                        <p>A Minecraft Wiki é um site feito por fãs, criado para compartilhar tudo o que você precisa saber sobre o universo de Minecraft!<br>
+                        <br>Aqui você encontra informações sobre mods, biomas, guias, curiosidades e muito mais, tudo de forma simples, organizada e com o mesmo amor pelo jogo.</p>
+                    </div>
+                </article>
+
+                <article class="sobre-pt1-2">
+                    <h2>Nossos Objetivos</h2>
+                    <ul>
+                        <li><input type="checkbox" checked> Compartilhar informações úteis e interessantes sobre Minecraft.</li>
+                        <li><input type="checkbox" checked> Facilitar o acesso a guias e dicas para todos os jogadores.</li>
+                        <li><input type="checkbox" checked> Manter a comunidade sempre atualizada.</li>
+                        <li><input type="checkbox" checked> Celebrar o universo incrível de Minecraft!</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="sobre-pt2">
+                <h2>Nossa Equipe</h2>
+                <p>Somos um grupo de estudantes apaixonados por tecnologia e por Minecraft!</p>
+
+                <section class="sobre-pt2-2">
+                    <article>
+                        <img src="imgs/sobre/lucas.jpe" alt="foto de integrante">
+                        <h3>Lucas</h3>
+                    </article>
+
+                    <article>
+                        <img src="imgs/sobre/CREEPERESPLO.jpg" alt="foto de integrante">
+                        <h3>CREEPERESPLO</h3>
+                    </article>
+
+                    <article>
+                        <img src="imgs/sobre/lucas.jpe" alt="foto de integrante">
+                        <h3>Lucas</h3>
+                    </article>
+
+                    <article>
+                        <img src="imgs/sobre/CREEPERESPLO.jpg" alt="foto de integrante">
+                        <h3>CREEPERESPLO</h3>
+                    </article>
+
+                    <article>
+                        <img src="imgs/sobre/lucas.jpe" alt="foto de integrante">
+                        <h3>Lucas</h3>
+                    </article>
+                </section>
+            </section>
+
+            <section id="menu" class="menu" >
+                <div class="bloco-categorias">
+                    <section class="menu-pt1">
+                        <article onclick="categoria('mods')">
+                            <img src="imgs/index/bloco-de-grama.png" alt="bloco de grama">
+                            <div>
+                                <h2>Mods</h2>
+                                <p>Melhore sua experiência</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('biomas')">
+                            <img src="imgs/index/muda de carvalho.png" alt="muda de carvalho">
+                            <div>
+                                <h2>Biomas</h2>
+                                <p>Descubra novos biomas</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('mobs')">
+                            <img src="imgs/index/Crafting-table.png" alt="Crafting Table">
+                            <div>
+                                <h2>Mobs</h2>
+                                <p>Conheça os mobs</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('curiosidades')">
+                            <img src="imgs/index/livro-minecraft.png" alt="livro">
+                            <div>
+                                <h2>Curiosidades</h2>
+                                <p>Fatos incríveis sobre Minecraft</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <button onclick="menu('fechar')"> Fechar </button>
+                    </section>
+
+                    <section class="menu-pt2">
+                        <img id="img-categoria" alt="logo categoria">
+                        <h2 id="nome-categoria"></h2>
+                        <p id="descricao-categoria"></p>
+                        <button onclick="pagina()">Explorar <i class="fa-solid fa-arrow-right"></i></button>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            <img src="imgs/minecrat-logo.png" alt="logo minecraft">
+            <p>Minecraft Wiki | Explore. Aprenda. Jogue.</p>
+        </article>
+            
+        <article id="footer-pt2">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-github"></i>
+        </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

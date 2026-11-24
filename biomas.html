@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomas - Minecraft Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <article class="header-pt1">
+                <a href="https://www.minecraft.net/" target="_blank" id="logo"><img src="imgs/minecrat-logo.png" alt="logo minecraft"></a>
+                <a href="https://lucasdacunha73-dot.github.io/Minecraft-Wiki-Fandom/" target="_blank"><img src="imgs/minecraft-wiki-titulo.png" alt="titulo minecraft wiki"></a>
+            </article>
+
+            <article class="header-pt2">
+                <nav>
+                    <div onclick="link('index')"><i class="fa-solid fa-house-chimney"></i>Início</div>
+                    <div onclick="menu('mostrar'), categoria('mods')"><i class="fa-solid fa-globe"></i>Explorar</div>
+                    <div onclick="link('mobs')"><i class="fa-solid fa-book-open"></i>Mobs</div>
+                    <div onclick="link('sobre')"><i class="fa-solid fa-star"></i>Sobre</div>
+                </nav>
+            </article>
+
+            <button id="botao-menu" onclick="menuhamburguer('mostrar')"><i class="fa-solid fa-bars"></i></button>
+
+            <article id="menu-mobile">
+                <nav>
+                    <a href="#" onclick="menuhamburguer('esconder')"><i class="fa-solid fa-xmark"></i></a>
+                    <div onclick="link('index')">Início</div>
+                    <div onclick="link('mods')">Mods</div>
+                    <div onclick="link('biomas')">Biomas</div>
+                    <div onclick="link('mobs')">Mobs</div>
+                    <div onclick="link('curiosidades')">Curiosidades</div>
+                    <div onclick="link('sobre')">Sobre</div>
+                </nav>
+            </article>
+
+            <article class="header-pt3">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+            </article>
+        </section>
+
+        <section class="header2 header2-biomas">
+            <img id="header2-img1-biomas" src="imgs/index/muda de carvalho.png" alt="picareta encantada">
+            <article>
+                <img class="img2-header-biomas" src="imgs/biomas/titulo-header.png" alt="titulo do header">
+                <p>Descubra todos os biomas de Minecraft e<br> suas características únicas!</p>
+            </article>
+        </section>
+    </header>
+
+    <main class="biomas">
+        <section>
+            <article class="biomas-pt1">
+                <h2>Principais Biomas</h2>
+                <p>Explore os biomas mais incríveis do mundo de Minecraft!</p>
+            </article>
+
+            <section class="biomas-pt2">
+                <article>
+                    <img src="imgs/biomas/floresta.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Floresta</h3>
+                        <p>Florestas são o bioma mais comum em Minecraft, cujo clima é temperado, representando florestas sazonais com muitos carvalhos e algumas bétulas. </p>
+                        <button onclick="bioma(1)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/biomas/planicie.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Planície</h3>
+                        <p>As planícies são biomas temperados que se assemelham a pastos. Elas estão entre os primeiros biomas adicionados ao jogo. Existem duas variantes do bioma nas planícies da família do bioma.</p>
+                        <button onclick="bioma(2)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/biomas/deserto.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Deserto</h3>
+                        <p>O deserto é um bioma quente e expansivo, que consiste principalmente em areia.</p>
+                        <button onclick="bioma(3)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/biomas/Neve.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Neve</h3>
+                        <p>Neve (ou neve no topo) é um bloco de cobertura normalmente formado por queda de neve.</p>
+                        <button onclick="bioma(4)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/biomas/Taiga.webp" alt="imagem do bioma">
+                    <div>
+                        <h3>Taiga</h3>
+                        <p>A taiga é um bioma úmido e gelado que consiste numa pastagem florestada com samambaias pequenas e grandes, grama pálida verde-azulada e árvores de abeto e pinheiro. As raposas comumente geram aqui.</p>
+                        <button onclick="bioma(5)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/biomas/pantano.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Pantano</h3>
+                        <p>Os pântanos são, em sua maioria, biomas planos, com elevações baixas o suficiente para ir abaixo do nível do mar em grande parte da área.</p>
+                        <button onclick="bioma(6)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="imgs/biomas/Savana.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Savana</h3>
+                        <p>As savanas são, em sua maioria, biomas planos gerados ao lado de planícies e desertos, com grandes quantidades de grama alta em todo o terreno. </p>
+                        <button onclick="bioma(7)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="imgs/biomas/selva.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Selva</h3>
+                        <p>O bioma de Selva (Jungle) no Minecraft é uma região exuberante, conhecida por sua vegetação densa, árvores gigantescas e recursos exclusivos.</p>
+                        <button onclick="bioma(8)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="imgs/biomas/montanhas.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Montanhas</h3>
+                        <p>Região elevada com picos íngremes, blocos de pedra e camadas de neve no topo. Abriga cabras, minério de esmeralda e cavernas profundas ricas em recursos.</p>
+                        <button onclick="bioma(9)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="imgs/biomas/oceano.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Oceano</h3>
+                        <p>Grande extensão de água que separa os continentes e varia de temperatura. Esconde naufrágios, ruínas, monumentos oceânicos, recifes de coral e criaturas como golfinhos e tartarugas.</p>
+                        <button onclick="bioma(10)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="imgs/biomas/cerejeira.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Cerejeiras</h3>
+                        <p>Bioma vibrante localizado nas encostas de montanhas, coberto por árvores de folhas rosas e pétalas no chão. Atrai abelhas e fornece madeira rosada muito usada em construções decorativas.</p>
+                        <button onclick="bioma(11)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                
+                <article>
+                    <img src="imgs/biomas/cogumelos.jpeg" alt="imagem do bioma">
+                    <div>
+                        <h3>Cogumelos</h3>
+                        <p>Ilha rara coberta por micélio e cogumelos gigantes no lugar de árvores comuns. É o bioma mais seguro da superfície porque nenhum monstro hostil aparece lá naturalmente, além de ser o único lar das coguvacas.</p>
+                        <button onclick="bioma(12)">Ver Mais <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>      
+            </section>
+
+            <section id="menu" class="menu" >
+                <div class="bloco-categorias">
+                    <section class="menu-pt1">
+                        <article onclick="categoria('mods')">
+                            <img src="imgs/index/bloco-de-grama.png" alt="bloco de grama">
+                            <div>
+                                <h2>Mods</h2>
+                                <p>Melhore sua experiência</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('biomas')">
+                            <img src="imgs/index/muda de carvalho.png" alt="muda de carvalho">
+                            <div>
+                                <h2>Biomas</h2>
+                                <p>Descubra novos biomas</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('mobs')">
+                            <img src="imgs/index/Crafting-table.png" alt="Crafting Table">
+                            <div>
+                                <h2>Mobs</h2>
+                                <p>Conheça os Mobs</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <article onclick="categoria('curiosidades')">
+                            <img src="imgs/index/livro-minecraft.png" alt="livro">
+                            <div>
+                                <h2>Curiosidades</h2>
+                                <p>Fatos incríveis sobre Minecraft</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </article>
+
+                        <button onclick="menu('fechar')"> Fechar </button>
+                    </section>
+
+                    <section class="menu-pt2">
+                        <img id="img-categoria" alt="logo categoria">
+                        <h2 id="nome-categoria"></h2>
+                        <p id="descricao-categoria"></p>
+                        <button onclick="pagina()">Explorar <i class="fa-solid fa-arrow-right"></i></button>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            <img src="imgs/minecrat-logo.png" alt="logo minecraft">
+            <p>Minecraft Wiki | Explore. Aprenda. Jogue.</p>
+        </article>
+            
+        <article id="footer-pt2">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-github"></i>
+        </article>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
