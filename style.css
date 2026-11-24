@@ -458,7 +458,7 @@ body{
 
 .biomas-pt2 article{
     width: 20vw;
-    height: 47vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -486,7 +486,7 @@ body{
     background-color: #2b165fdc;
     border: #7c55e9 solid 1px;
     padding: 10px 20px;
-    width: 40%;
+    width: 50%;
     border-radius: 15px;
     margin-left: auto;
     margin-right: 15px;
