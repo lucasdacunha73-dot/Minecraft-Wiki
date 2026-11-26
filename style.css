@@ -881,6 +881,10 @@ footer article{
         width: 70vw;
     }
 
+    .cards-index article div div{
+        width: 80%;
+    }
+
     .cards-index img{
         width: 20vw;
         height: 20vw;
